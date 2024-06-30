@@ -30,6 +30,7 @@ void	ft_parseparams(int matrix[11][11][11], char parseparams[71], int size)
 			ft_setval(matrix, cpt2 - 2 * size, 0, params[cpt1]);
 		else if (cpt3 <= size * 4)
 			ft_setval(matrix, cpt2 - 3 * size, 5, params[cpt1]);
+		
 		cpt1++;
 		cpt2++;
 		cpt3++;

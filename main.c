@@ -57,13 +57,13 @@ void	ft_initmatrix(int matrix[11][11][11], int size)
 	int	cpt3;
 
 	cpt1 = 0;
-	while (cpt1 < size + 1)
+	while (cpt1 < size + 2)
 	{
 		cpt2 = 0;
-		while (cpt2 < size + 1)
+		while (cpt2 < size + 2)
 		{
 			cpt3 = 0;
-			while (cpt3 < size + 1)
+			while (cpt3 < size + 2)
 			{
 				matrix[cpt1][cpt2][cpt3] = 0;
 				cpt3++;
