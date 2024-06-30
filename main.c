@@ -75,11 +75,6 @@ void	ft_initmatrix(int matrix[11][11][11], int size)
 	ft_putstr("matrix initiated\n");
 }
 
-void	ft_setval(int matrix[11][11][11], int line, int col, int value)
-{
-	matrix[line][col][0] = value;
-}
-
 void	ft_parcharint(int *params, char parseparams[71], int size)
 {
 	int	cpt1;
@@ -109,3 +104,37 @@ int	main(int argc, char **argv)
 	ft_affresult(result, size);
 	return (0);
 }
+// etat recu par parametres.
+// parametre recus:
+// remplis case 0/1 0/2 0/3 0/4 5/1 5/2 5/3 5/4 1/0 2/0 3/0 4/0 1/5 2/5 3/5 4/5
+// mettre 0 dans 0/0 0/6 1/1-1/4 2/1-2/4 3/1-3/4 4/1-4/4 5/0 et 5/5
+// ps: angles inutiles, mais autant etre propre et mettre zero
+// dimension 1 = ligne (6 n + 2 pour inclure cadre)
+// dimension 2 = col 
+// dimension 3 = valeurs posibles, 0 contient la valeur fixee
+// verification: 
+// 1) toutes lignes+toutes col somme 1+2+3+4
+// 2) chiffre unique par ligne / colonne
+// --> ok
+//
+// dimensions (recu par possible parametre 3 [2]
+// 	par 1 etant filename
+// 	par 2 la chaine des valeurs
+// 	par 3 les dimensions
+//
+// verification:
+// 1) toutes lignes+toutes col somme 1+2+3+4
+// 2) chiffre unique par ligne / colonne
+// --> ok
+//
+// variable definissant les dimensions du carre
+// compteur de boucle
+// compteur de boucle
+// compteur de boucle
+// matrice avec les headers
+// matrice resultat
+
+// dimensions (recu par possible parametre 3 [2]
+// 	par 1 etant filename
+// 	par 2 la chaine des valeurs
+// 	par 3 les dimensions

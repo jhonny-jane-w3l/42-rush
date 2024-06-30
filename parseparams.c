@@ -1,9 +1,13 @@
 #include <stdio.h>
 #include <unistd.h>
 
-void	ft_setval(int matrix[11][11][11], int line, int col, int value);
 void	ft_parcharint(int *params, char parseparams[71], int size);
 void	ft_putstr(char *str);
+
+void	ft_setval(int matrix[11][11][11], int line, int col, int value)
+{
+	matrix[line][col][0] = value;
+}
 
 void	ft_parseparams(int matrix[11][11][11], char parseparams[71], int size)
 {
